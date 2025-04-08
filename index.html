@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자동차 브랜드 추천</title>
+    <title>자동차 정보 사이트</title>
     <style>
         body {
             text-align: center;
             font-size: 2rem;
             margin-top: 20%;
         }
+        button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <p id="message">자동차 브랜드 추천 ~</p>
-    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+    <p>자동차 정보가 궁금하다면?</p>
+    <button onclick="goToWebsite()">눌러서 확인하기</button>
 
     <script>
-        function showRandomMessage() {
-            const messa
+        function goToWebsite() {
+            window.location.href = "https://www.caranddriver.com/";
+        }
+    </script>
+</body>
+</html>
